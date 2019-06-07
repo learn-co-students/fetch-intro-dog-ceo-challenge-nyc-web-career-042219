@@ -1,0 +1,12 @@
+{
+  "name": "fetch-intro-dog-ceo-challenge-nyc-web-career-042219",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JsnGmz/fetch-intro-dog-ceo-challenge-nyc-web-career-042219.git",
+  "author": "Jason Gomez <jason.gomez@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0"
+  }
+}
