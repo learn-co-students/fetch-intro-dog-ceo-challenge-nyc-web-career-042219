@@ -28,15 +28,25 @@ breedList.addEventListener('click', (event) => {
     event.target.style.color = "red";
 })
 
+// dropDown.addEventListener('change', (event) => {
+//     let domStr = ''
+//     const array = Array.from(breedList.children)
+//     array.forEach(breed => {
+//         if (breed.innerText.startsWith(event.target.value)) {
+//             domStr += `<li>${breed.innerHTML}</li>`
+//         }  
+//     })
+//     breedList.innerHTML = domStr
+// })
+
+
 dropDown.addEventListener('change', (event) => {
-    let domStr = ''
-    const array = Array.from(breedList.children)
-    array.filter(breed => {
-        return breed.innerText.startsWith(event.target.value)  
-    }).forEach(element => {
-        domStr += `<li>${element.innerHTML}</li>`
-    })
-    breedList.innerHTML = domStr
+    let breedArray = Array.from(breedList.children)
+    for (let i = 0; i < breedArray.length; i++){
+        if (breedArray[i].innerText[0] === event.target.value) {
+            breedArray[i].style.display = 'list-item'
+        } else {
+            breedArray[i].style.display = 'none'
+        }
+    }
 })
-
-
